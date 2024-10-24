@@ -17,11 +17,13 @@ function randomNumber(){
     const alphabet =alphabets[roundNumber];
     const inputedAlpha =document.getElementById('inputed-alpha');
     inputedAlpha.innerText=alphabet;
-    
     return alphabet;
+    
+    
 }
 
 function setBackgorundColor(elementId){
     const inputedText = document.getElementById(elementId);
     inputedText.classList.add('bg-amber-300');
+    inputedText.classList.add('text-black')
 }
