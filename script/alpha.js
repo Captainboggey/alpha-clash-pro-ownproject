@@ -18,7 +18,21 @@ function keyboard(event){
   console.log(alphabet,playerPressed);
 
   if(playerPressed === alphabet){
-    console.log('you pressed right');
+    const currentScore =document.getElementById('current-score');
+    const currentScoreText = currentScore.innerText;
+    const currentScoreNum = parseInt(currentScoreText);
+    const rightScore = currentScoreNum+1;
+    currentScore.innerText =rightScore;
+    console.log(rightScore);
+
+
+
+
+
+
+
+
+
     removeBackgroundColor(alphabet);
     continueGame();
 
