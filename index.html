@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en ">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,7 +25,7 @@
             ALPHABET CLASH
           </h1>
           <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-          <button onclick="playNow()" class="btn bg-white text-black p-4">Play Now</button>
+          <button onclick="play()" class="btn bg-white text-black p-4">Play Now</button>
         </div>
       </section>
       <!-- playground section -->
@@ -75,7 +75,7 @@
          </div>
          <!-- keyboard ends -->
           <div class="flex justify-around w-full">
-            <button class="btn bg-[#894189] text-white rounded-full px-4">Life <img src="/images/life.svg" alt=""> 1</button>
+            <button class="btn bg-[#894189] text-white rounded-full px-4">Life <img src="/images/life.svg" alt=""> <span id="life-score">1</span></button>
             <button class="btn bg-[#360490] text-white px-4 rounded-full">Score <img src="/images/dollar.svg" alt="">1</button>
           </div>
       </section> 
@@ -89,7 +89,7 @@
         </div>
        </section>
     </main>
-    <script src="/script/play.js"></script>
+    <script src="/script/utiliy.js"></script>
     <script src="/script/alpha.js"></script>
   </body>
 </html>
