@@ -14,6 +14,9 @@ function continueGame() {
 }
 function keyboard(event) {
   const playerPressed = event.key;
+  if(playerPressed==='Escape'){
+    playAgain();
+  }
   const currentAlphabet = document.getElementById("current-alpha");
   const alphabet = currentAlphabet.innerText;
   console.log(alphabet, playerPressed);
