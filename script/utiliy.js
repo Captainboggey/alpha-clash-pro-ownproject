@@ -1,6 +1,6 @@
 function hideElement(elementId) {
   const element = document.getElementById(elementId);
-  element.classList.add("hidden");
+  element.classList.add('hidden');
 }
 function showElement(elementId){
     const element =document.getElementById(elementId);
@@ -13,6 +13,16 @@ function addBackgorundColor (elementId){
 function removeBackgroundColor(elementId){
     const element =document.getElementById(elementId);
     element.classList.remove('bg-orange-500');
+}
+function getElementValueById(elementId){
+    const element = document.getElementById(elementId);
+    const elementValue = element.innerText;
+    const value = parseInt(elementValue);
+    return value;
+}
+function setElementValueById(elementId,value){
+    const element =document.getElementById(elementId);
+    element.innerText =value;
 }
 
 function randomAlphabet(){
