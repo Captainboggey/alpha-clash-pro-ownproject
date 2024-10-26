@@ -8,7 +8,11 @@ function showElement(elementId){
 }
 function addBackgorundColor (elementId){
     const element =document.getElementById(elementId);
-    element.classList.add('bg-orange-500');
+    element.classList.add('bg-orange-500','text-white');
+}
+function removeBackgroundColor(elementId){
+    const element =document.getElementById(elementId);
+    element.classList.remove('bg-orange-500');
 }
 
 function randomAlphabet(){
@@ -17,7 +21,7 @@ function randomAlphabet(){
     const randomNumber = Math.random()*25;
     const index = Math.round(randomNumber);
     const alphabet = alphabets[index];
-    console.log(alphabet);
+    
     return alphabet;
 
 }
