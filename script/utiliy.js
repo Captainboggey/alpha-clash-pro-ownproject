@@ -25,6 +25,12 @@ function setElementValueById(elementId,value){
     element.innerText =value;
 }
 
+function getElementTextById(elementId){
+    const element = document.getElementById(elementId);
+    const text =element.innerText;
+    return text;
+}
+
 function randomAlphabet(){
     const alphabetsString = 'abcdefghijklmnopqrstuvwxyz'
     const  alphabets = alphabetsString.split('');

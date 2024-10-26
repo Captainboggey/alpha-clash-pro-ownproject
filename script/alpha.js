@@ -51,6 +51,13 @@ document.addEventListener("keyup", keyboard);
 function playAgain(){
     hideElement('playground-section');
     showElement('score-section');
+    
+   const currentScore = getElementValueById('current-score');
+   const lastScore = getElementTextById('last-score');
+   const finalScore = setElementValueById('last-score',currentScore)
+    console.log(currentScore);
+    const currentAlpha =getElementTextById('current-alpha');
+    removeBackgroundColor(currentAlpha);
     setElementValueById('life-score',5);
     setElementValueById('current-score',0);
 
