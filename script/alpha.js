@@ -26,18 +26,15 @@ function keyboard(event){
     console.log(rightScore);
 
 
-
-
-
-
-
-
-
     removeBackgroundColor(alphabet);
     continueGame();
 
   }else{
-    console.log('you are wrong')
+    const currentLife = document.getElementById('life-score');
+    const currentLifeElement = currentLife.innerText;
+    const currentLifeNum = parseInt(currentLifeElement);
+    const life = currentLifeNum-1;
+    currentLife.innerText =life;
   }
 
 }
