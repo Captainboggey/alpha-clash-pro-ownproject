@@ -1,5 +1,6 @@
 function play() {
   hideElement("home-section");
+  hideElement('score-section');
   showElement("playground-section");
   continueGame();
 }
@@ -39,7 +40,18 @@ function keyboard(event) {
     const currentLife = getElementValueById('life-score');
     const updatedLife = currentLife-1;
     const finalResult = setElementValueById('life-score',updatedLife);
+    if(updatedLife===0){
+        playAgain();
+    }
   }
 }
 
 document.addEventListener("keyup", keyboard);
+
+function playAgain(){
+    hideElement('playground-section');
+    showElement('score-section');
+    setElementValueById('life-score',5);
+    setElementValueById('current-score',0);
+
+}
